@@ -109,9 +109,6 @@ button {
   height: 93vh;
   width: 100vw;
   background-color: rgb(201, 62, 41);
-  /* display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap; */
 }
 .container {
   display: flex;
@@ -162,14 +159,19 @@ button:hover {
   background-color: #2980b9;
 }
 
-/* 
+.container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
 .card {
   width: 300px;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  margin: 20px;
+  margin: 10px;
 }
 
 .card img {
@@ -192,57 +194,4 @@ button:hover {
 .card-text {
   font-size: 0.9rem;
   color: #555;
-} */
-
-/* #map {
-  display: block;
-  position: relative;
-  top: 130px;
-  left: 110px;
-  width: 1400px;
-  overflow: hidden;
-} */
-/* #Layer_1 {
-  height: 800px;
-  align-items: center;
-  position: relative;
-  background-color: black;
 }
-.bx {
-  font-size: 30px;
-}
-#Israel {
-  position: absolute;
-  top: 60%;
-  left: 63%;
-}
-#Ethiopia {
-  position: absolute;
-  top: 77%;
-  left: 63%;
-}
-#CuscoPeru {
-  position: absolute;
-  top: 93%;
-  left: 34%;
-}
-#NairobiKenya {
-  position: absolute;
-  top: 80%;
-  left: 60%;
-}
-#KathmanduNepal {
-  position: absolute;
-  top: 66%;
-  left: 75%;
-}
-#CapeTownSouthAfrica {
-  position: absolute;
-  top: 105%;
-  left: 58%;
-}
-#HanoiVietnam {
-  position: absolute;
-  top: 67%;
-  left: 81%;
-} */
