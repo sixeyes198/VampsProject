@@ -16,6 +16,7 @@ header {
 
 #navigation {
   font-size: 18px;
+  align-self: center;
 }
 #logo {
   font-size: 23px;
