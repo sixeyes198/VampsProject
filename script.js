@@ -49,5 +49,3 @@ function showText(element) {
   }
   setTimeout(hideText, 3000);
 }
-
-//Now the index page

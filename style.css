@@ -39,7 +39,11 @@ button {
   background-color: rgb(255, 255, 255);
 }
 .wrapper {
-  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* position: relative; */
   width: 400px;
   height: 440px;
   background: transparent;
@@ -54,6 +58,20 @@ button {
 .wrapper .form-box {
   width: 100%;
   padding: 40px;
+}
+.wrapper .icon-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  /* z-index: 1; */
 }
 .form-box .login {
   font-size: 2em;
@@ -77,6 +95,20 @@ button {
   font-weight: 500;
   pointer-events: none;
 }
+.remember-forgot {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  position: relative;
+  left: 25%;
+  width: 150px;
+}
+.login-register {
+  text-align: center;
+  margin-top: 2px;
+}
+
 #main {
   overflow: hidden;
 }
