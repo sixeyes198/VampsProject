@@ -39,7 +39,7 @@ button {
 }
 
 button:hover {
-  background-color: #2980b9;
+  background-color: #000000;
 }
 
 #map {
@@ -161,4 +161,7 @@ button:hover {
   left: 60%;
   border: 2px solid darkorchid;
   display: none;
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
 }
