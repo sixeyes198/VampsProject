@@ -14,7 +14,9 @@ header {
   justify-content: space-between;
   height: 55px;
 }
-
+#menu-icon {
+  display: none;
+}
 #navigation {
   font-size: 18px;
   align-self: center;
@@ -276,12 +278,12 @@ button:hover {
 }
 
 @media all and (max-width: 480px) {
+  /* Additional styles for smaller screens */
+
   header {
     padding: 10px;
-  }
-
-  #logo {
-    font-size: 18px;
+    position: fixed;
+    top: 0;
   }
 
   #navigation {
@@ -292,6 +294,22 @@ button:hover {
     left: 0;
     width: 100%;
     background-color: rgba(255, 230, 36);
+    display: none; /* Hide the navigation initially on small screens */
+  }
+
+  #navigation a {
+    margin: 10px 0;
+  }
+
+  #navigation.active {
+    display: flex; /* Show the navigation when the 'active' class is applied */
+  }
+
+  /* Add a menu icon for mobile navigation */
+  #menu-icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
   }
 
   .wrapper {
@@ -322,8 +340,12 @@ button:hover {
   }
 
   .gridcontainer {
-    flex-direction: column;
+    margin-top: 35px;
+    padding: 10px;
+    display: flex;
+    flex-direction: raw;
     align-items: center;
+    overflow-x: auto;
   }
 
   .grid-item {
@@ -362,8 +384,10 @@ button:hover {
   }
 
   .container1 {
+    display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
+    overflow-x: auto;
   }
 
   .card {
